@@ -11,9 +11,9 @@ A Basic information parser for Github :
  | `GithubRepo.py` | Gives Repositories Information |
 
 ### To Add Feature
- * ** Backup Repositories **
+ * Backup Repositories
  * Enable Browsing in whole of user's Repositories
- * Implementing ** Work-Flow **
+ * Implementing Work-Flow
  * Saving Information into files
  * Raising Error
  * Combining into a package
