@@ -1,3 +1,6 @@
 Repository Name - GithubTools
 
-Last-Updated : 19-03-2017
+Last-Updated : 19-03-2017  # edit this
+
+Changes :
+    1. Added Browsing for contributor's name and link to their profile.

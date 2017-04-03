@@ -1,5 +1,5 @@
-GithubAPI <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/500px-Octicons-mark-github.svg.png" height = "40" >
-============
+GithubTools  <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/500px-Octicons-mark-github.svg.png" height = "25" width="25" >
+==========================================================================================================================================================================
 
 A Basic information parser for Github :
 
@@ -9,6 +9,7 @@ A Basic information parser for Github :
  |  `GithubIssues.py` | Gives Total Issues , Total PR's and much more |
  | `GithubUser.py` | Gives User Information |
  | `GithubRepo.py` | Gives Repositories Information |
+ | `GithubEmoji.py` | A List of 1500+ Emoji for markdown |
 
 ### To Add Feature
  * Backup Repositories
@@ -17,6 +18,12 @@ A Basic information parser for Github :
  * Saving Information into files
  * Raising Error
  * Combining into a package
+ * To add GUI using Tkinter/PyQt
+
+### Usage
+    ```
+     pip install -r requirements.txt
+    ```
 
 ### Contributing
  ( To Add )

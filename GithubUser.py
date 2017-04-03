@@ -1,4 +1,5 @@
 #Gives user details
+#add - check if your're following a user or not
 import requests
 import urllib.request
 from PIL import Image

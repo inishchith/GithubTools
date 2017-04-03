@@ -22,6 +22,13 @@ if data['total_count']==1 :
     print('Last Update : ',str(data['items'][0]['updated_at'])[:-10])
     print('Watcher count : ',data['items'][0]['watchers_count'])
     print('Open-issues : ',data['items'][0]['open_issues_count'])
+     # listing down contributors :
+    url = url + "/contributors"
+    contreq = requests.get(url)
+    contdata = contreq.json()
+    print("Contributors : ")
+    for i in range(len(contdata)):
+        print("Name : " + contdata[i]['login'] + " link : " + contdata[i]['url'])
 elif data['total_count']>1:
     print('There are more than 1 repositories with '+ str(repo_name).upper())
     username=input('Please enter username so that we can narrow down the results : \n')
@@ -47,7 +54,13 @@ elif data['total_count']>1:
         print('Last Update : ', str(data[found]['updated_at'])[:-10])
         print('Watcher count : ', data[found]['watchers_count'])
         print('Open-issues : ', data[found]['open_issues_count'])
-
+        # listing down contributors :
+        url = " https://api.github.com/repos/" + username + "/gsoc/contributors"
+        contreq = requests.get(url)
+        contdata = contreq.json()
+        print("Contributors : ")
+        for i in range(len(contdata)):
+            print("Name : " + contdata[i]['login'] +" link : " + contdata[i]['url'])
     else:
         print('please check the repository name and username entered ( searching done by query is case-sensitive )\n for now \n')
         print('No repository named ' + repo_name + ' found by '+ username)
