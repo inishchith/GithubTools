@@ -8,7 +8,7 @@ import requests
 data ='{"scopes":["repo"]}'
 
 user = 'inishchith'
-pw = 'Nks123456'
+pw = ''
 r = requests.post("https://api.github.com/authorizations",data=data,auth=HTTPBasicAuth(user, pw))
 res = r.json()
 if('token' in res.keys()):
